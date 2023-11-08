@@ -1,0 +1,1 @@
+This repository contains my solutions to various SQL exercises from HackerRank (https://www.hackerrank.com/domains/sql). Each directory represents a different problem. You can find the code for each exercise along with a description of exercise.
