@@ -1,0 +1,3 @@
+UPDATE Students SET Name = NULL WHERE Marks < 70;
+SELECT Students.Name, Grades.Grade, Students.Marks FROM Students INNER JOIN Grades ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark ORDER BY CASE WHEN Grades.Grade > 7 THEN Grades.Grade END DESC,CASE WHEN Grades.Grade > 7 THEN Students.Name END,CASE
+WHEN Grades.Grade <=7 THEN Grades.Grade END DESC,CASE  WHEN Grades.Grade <=7 THEN Students.Marks END;
